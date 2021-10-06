@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flappy Bird</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Teko:700"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background: linear-gradient(to right, #f58, #69f);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 95vh;
+      }
+
+      canvas {
+        border: 4px solid #eee;
+        display: block;
+        width: 100%;
+        max-width: 320px;
+        height: 480;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas height="480" id="bird" width="320"></canvas>
+    <script src="javascript/game.js"></script>
+  </body>
+</html>
