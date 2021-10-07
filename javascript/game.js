@@ -5,11 +5,11 @@ let frameCount = 0
 
 // load source image
 const source = new Image()
-source.src = '../img/source.png'
+source.src = '/img/source.png'
 
 // load audios
 const eminem = new Audio()
-eminem.src = '../audio/eminem.m4a'
+eminem.src = '/audio/eminem.m4a'
 
 // game states
 const states = {
