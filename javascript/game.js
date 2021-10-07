@@ -4,12 +4,12 @@ const ctx = canvas.getContext('2d')
 let frameCount = 0
 
 // load source image
-const source = new Image()
-source.src = '/img/source.png'
+let source = new Image()
+source.src = '../img/source.png'
 
 // load audios
-const eminem = new Audio()
-eminem.src = '/audio/eminem.m4a'
+let eminem = new Audio()
+eminem.src = '../audio/eminem.m4a'
 
 // game states
 const states = {
@@ -31,7 +31,7 @@ canvas.addEventListener('click', (e) => {
   switch (states.currentState) {
     case states.getReadyState:
       states.currentState = states.gameState
-      eminem.play()
+      eminem.play().then(r => nothing(r))
       break
     case states.gameState:
       bird.flap()
@@ -417,3 +417,7 @@ function loop() {
 }
 
 loop()
+
+function nothing(r) {
+  //nothing
+}
