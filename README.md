@@ -1,5 +1,5 @@
 # Flappy Bird 🐦
 
-[**LİVE DEMO HERE!**](https://adarsonmez.github.io/flappy-bird/)
+[**LİVE DEMO HERE!**](http://flappy-bird.epizy.com/)
 
 ![Screenshoot](img/flappy.png)
