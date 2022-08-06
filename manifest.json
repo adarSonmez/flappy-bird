@@ -1,6 +1,6 @@
 {
-  "name": "Flappy Bird",
-  "short_name": "Flappy Bird by Adar Sönmez",
+  "name": "Flappy Bird by Adar Sönmez",
+  "short_name": "Flappy Bird",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
