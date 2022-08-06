@@ -4,11 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flappy Bird</title>
+    <meta name="description" content="Flappy Bird Game (PWA)" />
+    <meta name="keywords" content="Flappy Bird, Game, PWA" />
+    <meta name="author" content="Adar Sönmez" />
+    <meta name="theme-color" content="#ffffff" />
     <link
       href="https://fonts.googleapis.com/css?family=Teko:700"
       rel="stylesheet"
     />
+
+    <title>Flappy Bird</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
     <style type="text/css">
       * {
         box-sizing: border-box;
@@ -29,12 +39,24 @@
         display: block;
         width: 100%;
         max-width: 320px;
-        height: 480;
       }
     </style>
   </head>
   <body>
     <canvas height="480" id="bird" width="320"></canvas>
-    <script defer src="javascript/game.js"></script>
+    <script defer src="/javascript/game.js"></script>
+    <script>
+      // register service worker
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+          .register('/serviceWorker.js')
+          .then((registration) => {
+            console.log('Service worker registered: ', registration)
+          })
+          .catch((err) => {
+            console.log('Service worker registration failed: ', err)
+          })
+      }
+    </script>
   </body>
 </html>
